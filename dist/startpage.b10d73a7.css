@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  color: #2d3748;
+  background-color: #fff9ec;
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.footer {
+  color: #2d3748;
+  background: #d8e5fc;
+  padding: 50px;
+  box-shadow: 0 -4px 12px #00000026, 0 -8px 24px #0000001a;
+}
+
+.footer-list {
+  text-align: center;
+}
+
+.footer-list-item {
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto 16px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.footer-list-item:last-child {
+  opacity: .8;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+/*# sourceMappingURL=startpage.b10d73a7.css.map */
