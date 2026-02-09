@@ -9,6 +9,7 @@
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,7 +47,13 @@
         }
     }
 
+        
+    & > .menu-container {
+        display: none;
+    }
+
 }
+
 
 
 // Footer stilar
@@ -74,5 +81,74 @@
                 opacity: 0.8;
             }
         }
+    }
+}
+
+@media screen and (max-width: 760px) { 
+    .header {
+        .nav-list {
+            display: none;
+        }
+
+        & > .menu-container {
+                display: flex;
+
+                & > .menu {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+
+                    & > .menu-icon {
+                        height: 40px;
+                        width: 40px;
+                    }
+
+                    & > .menu-heading {
+                        font-size: 1.25rem;
+                        font-family: $heading-font-family;
+                        font-weight: $heading-font-weight;
+                        line-height: $heading-line-height;
+                        letter-spacing: $heading-letter-spacing;
+
+                    }
+                }
+
+                & > .dropdown-menu {
+                    display: none;
+                }
+
+                & > .dropdown-menu.show {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    position: absolute;
+                    top: 150px;
+                    right: 0px;
+                    animation: slideIn 0.3s forwards;
+
+                    & > .menu-list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        padding: 30px 40px;
+                        background-color: $primary-color;
+
+                        & > .menu-list-item {
+                            transition: filter 0.3s ease;
+                            cursor: pointer;
+                        }
+
+                        & > .menu-list-item:hover {
+                            filter: brightness(0.5);
+                        }
+                    }
+
+                }
+
+        }
+
     }
 }
