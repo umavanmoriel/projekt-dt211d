@@ -34,9 +34,66 @@ a {
     letter-spacing: $heading-letter-spacing;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
+    color: $text-dark;
 }
 
 li {
+    font-family: $paragraph-font-family;
+    font-size: $paragraph-font-size;
+    font-weight: $paragraph-line-weight;
+    line-height: $paragraph-line-height;
+    color: $text-light;
+}
+
+h1 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    font-size: 1.125rem;
+}
+
+h6 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    font-size: 1rem;
+}
+
+p {
     font-family: $paragraph-font-family;
     font-size: $paragraph-font-size;
     font-weight: $paragraph-line-weight;
