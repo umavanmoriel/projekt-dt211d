@@ -26,3 +26,20 @@ body {
     color: $text-dark;
     background-color: $main-background-color;
 }
+
+a {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+li {
+    font-family: $paragraph-font-family;
+    font-size: $paragraph-font-size;
+    font-weight: $paragraph-line-weight;
+    line-height: $paragraph-line-height;
+    color: $text-light;
+}
