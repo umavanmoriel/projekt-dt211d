@@ -1,0 +1,28 @@
+$primary-color: #d8e5fc;
+$secondary-color: #EFE3FC;
+$lighter-secondary-color: #FEEEF4;
+$accent-color: #E3F9F1;
+$text-dark: #2d3748;
+$text-light: #718096;
+$main-background-color: #FFF9EC;
+$block-background-color: #ffffff;
+$block-shadow: 0 4px 6px -1px rgba(216, 229, 252, 0.023), 0 2px 4px -1px rgba(239, 227, 252, 0.15);
+$hover-block-shadow: 0 20px 25px -5px rgba(216, 229, 252, 0.35), 0 10px 10px -5px rgba(239, 227, 252, 0.25);
+
+$heading-font-family:'Inter', Roboto, sans-serif;
+$heading-font-weight: 700;
+$heading-line-height: 1.2;
+$heading-letter-spacing: -0.02em;
+
+$paragraph-font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+$paragraph-font-size: 1.25rem;
+$paragraph-line-height: 1.7;
+$paragraph-line-weight: 400;
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $text-dark;
+    background-color: $main-background-color;
+}
