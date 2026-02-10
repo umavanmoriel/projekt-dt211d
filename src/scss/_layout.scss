@@ -1,3 +1,4 @@
+
 .main-startpage {
     & > .heading-container {
         background: $secondary-color;
@@ -75,10 +76,26 @@
 
                 }
             }
-
     }
-
 }
 
+@media screen and (max-width: 530px) {
+    .main-startpage {
+        & > .main-container {
+                padding: 40px;
 
+                & > .startpage-block {
+                    padding: 40px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+
+                    .arrow-icon {
+                        height: 30px;
+                    }
+                }
+        }
+    }
+}
 
