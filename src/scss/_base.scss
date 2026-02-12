@@ -93,3 +93,20 @@ p {
     line-height: $paragraph-line-height;
     color: $text-light;
 }
+
+
+label  {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    font-size: 1.125rem;
+}
+
+input {
+    font-family: $heading-font-family;
+    font-weight: $paragraph-line-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    font-size: 1.125rem;
+}

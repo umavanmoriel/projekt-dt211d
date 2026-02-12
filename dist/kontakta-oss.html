@@ -41,17 +41,28 @@
                 </div>
             </div>
         </header>
-        <main class="main-new-word">
-            <section id="words-container">
+        <main class="main-kontakta-oss">
+            <section class="contact-section">
+                <section class="contact-form-heading">
+                    <h1 class="contact-heading">Kontakta oss</h1>
+                    <p>Skicka ett meddelande så återkommer vi så fort som möjligt</p>
+                </section>
+                <form class="contact-form">
+                    <label for="contact-name">Namn</label>
+                    <input type="text" name="name" required="">
+                    <label for="contact-email">E-post</label>
+                    <input type="email" name="email" required="">
+                    <label for="contact-message">Meddelande</label>
+                    <textarea name="message" rows="5" required=""></textarea>
+                    <button id="send-button" type="submit" class="base-button">Skicka</button>
+                    <script>const sendButtonEl = document.getElementById('send-button');
+sendButtonEl.addEventListener('click', function(event) {
+    window.alert('Ditt meddelande har skickats');
+});
 
+</script>
+                </form>
             </section>
-            <div id="word-player">
-
-            </div>
-            <div class="button-container"> 
-                <button class="base-button" onclick="history.back()">Tillbaka</button>
-                <button id="new-word-button" class="base-button">Nytt ord</button>
-            </div>
         </main>
         <footer class="footer">
             <ul class="footer-list">

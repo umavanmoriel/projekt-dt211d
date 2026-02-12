@@ -79,6 +79,93 @@
     }
 }
 
+.main-vocabulary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 32px;
+    width: 100%;
+    max-width: 100%;
+
+        
+    & > .vocabulary-heading-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 0px 32px;
+    }
+
+    & > .vocabulary-image {
+        display: block;
+        margin: 0 auto;
+        
+        img {
+            width: auto;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
+    }
+}
+
+.main-kontakta-oss {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+
+    & > .contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+        padding: 50px 72px;
+        max-width: 500px;
+        background: $block-background-color;
+        border-radius: 20px;
+        box-shadow: $block-shadow;
+
+        & > .contact-form-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        }
+
+        & > .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            & > input,
+            & > textarea {
+                width: 100%;
+                padding: 10px 14px;
+                border-radius: 10px;
+                border: 1px solid $primary-color;
+                background-color: #fff;
+                box-sizing: border-box;
+            }
+
+            & > textarea {
+                resize: vertical;
+                min-height: 140px;
+            }
+
+            & > .base-button {
+                align-self: center;
+            }
+
+        }
+
+    }
+
+
+}
+
 @media screen and (max-width: 530px) {
     .main-startpage {
         & > .main-container {
@@ -97,5 +184,53 @@
                 }
         }
     }
+
+    .main-vocabulary {
+        
+        & > .vocabulary-heading-container {
+            padding: 0px;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.05rem;
+            }
+        }
+    }
+
+    .main-kontakta-oss {
+        padding: 60px 40px;
+
+        & > .contact-section {
+            padding: 50px 30px;
+
+            & > .contact-form-heading {
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+            }
+
+            & > .contact-form {
+                gap: 30px;
+
+                label, input {
+                    font-size: 1rem;
+                }
+
+            }
+
+        }
+
+    }
+    
 }
 

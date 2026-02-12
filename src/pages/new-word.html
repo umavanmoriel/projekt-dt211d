@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
         <script src="../js/main.js" type="module"></script>
+        <script src="../js/new-word.js" type="module"></script>
     </head>
     <body>
         <header class="header">
@@ -18,7 +19,7 @@
             <nav>
                 <ul class="nav-list">
                     <li>
-                        <a href="#" class="nav-list-link">Kontakta oss</a>
+                        <a href="./kontakta-oss.html" class="nav-list-link">Kontakta oss</a>
                     </li>
                     <li>
                         <a href="#" class="nav-list-link">Om oss</a>
@@ -35,7 +36,7 @@
                 </div>
                 <div class="dropdown-menu" id="dropdown-menu">
                     <ul class="menu-list">
-                        <li><a class="menu-list-item" href="#">Kontakta oss</a></li> 
+                        <li><a class="menu-list-item" href="./kontakta-oss.html">Kontakta oss</a></li> 
                         <li><a class="menu-list-item" href="#">Om oss</a></li> 
                         <li><a class="menu-list-item" href="#">Copyright</a></li>
                     </ul>
@@ -43,7 +44,16 @@
             </div>
         </header>
         <main class="main-new-word">
-            
+            <section id="words-container">
+
+            </section>
+            <div id="word-player">
+
+            </div>
+            <div class="button-container"> 
+                <button class="base-button" onclick="history.back()">Tillbaka</button>
+                <button id="new-word-button" class="base-button">Nytt ord</button>
+            </div>
         </main>
         <footer class="footer">
             <ul class="footer-list">

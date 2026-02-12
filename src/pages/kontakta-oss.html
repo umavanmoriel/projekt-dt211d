@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
         <script src="../js/main.js" type="module"></script>
-        <script src="../js/vocabular.js" type="module"></script>
+        <script src="../js/new-word.js" type="module"></script>
     </head>
     <body>
         <header class="header">
@@ -43,22 +43,27 @@
                 </div>
             </div>
         </header>
-        <main class="main-vocabulary">
-            <section class="vocabulary-heading-container">
-                <h1>Bygg ditt engelska ordförråd</h1>
-                <p>Fritt fram att lära sig så många ord du vill</p>
+        <main class="main-kontakta-oss">
+            <section class="contact-section">
+                <section class="contact-form-heading">
+                    <h1 class="contact-heading">Kontakta oss</h1>
+                    <p>Skicka ett meddelande så återkommer vi så fort som möjligt</p>
+                </section>
+                <form class="contact-form">
+                    <label for="contact-name">Namn</label>
+                    <input type="text" name="name" required>
+                    <label for="contact-email">E-post</label>
+                    <input type="email" name="email" required>
+                    <label for="contact-message">Meddelande</label>
+                    <textarea name="message" rows="5" required></textarea>
+                    <button id="send-button" type="submit" class="base-button">Skicka</button>
+                    <script> const sendButtonEl = document.getElementById('send-button');
+                        sendButtonEl.addEventListener('click', function(event) {
+                            window.alert('Ditt meddelande har skickats');
+                        });
+                    </script>
+                </form>
             </section>
-            <picture class="vocabulary-image">
-                <source media="(min-width: 600px)" srcset="../images/vocabulary_300.avif" type="image/avif">
-                <source media="(min-width: 600px)" srcset="../images/vocabulary_300.webp" type="image/webp">
-                <source media="(max-width: 600px)" srcset="../images/vocabulary_150.avif" type="image/avif">
-                <source media="(max-width: 600px)" srcset="../images/vocabulary_150.webp" type="image/webp">
-                <img class="vocabulary-image" src="../images/vocabulary_427.jpg" alt="Bild som visar olika ord.">
-            </picture>
-            <div class="button-container">
-                <button id="begin-button" class="base-button">Börja</button>
-                <button class="base-button" onclick="history.back()">Tillbaka</button>
-            </div>
         </main>
         <footer class="footer">
             <ul class="footer-list">
