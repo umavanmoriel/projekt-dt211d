@@ -766,11 +766,11 @@ function WordsInfoDisplay(data) {
         const newSectionEl = document.createElement('section');
         //Lägger till class till element
         newSectionEl.className = 'word-container';
-        const newWordEl = document.createElement('h2');
+        const newWordEl = document.createElement('h1');
         const newWordTextEl = document.createTextNode(word.word);
         newWordEl.appendChild(newWordTextEl);
         newSectionEl.appendChild(newWordEl);
-        const wordPronunciationEl = document.createElement('h3');
+        const wordPronunciationEl = document.createElement('h2');
         const wordPronunciationTextEl = document.createTextNode(word.phonetics[0].text);
         wordPronunciationEl.appendChild(wordPronunciationTextEl);
         newSectionEl.appendChild(wordPronunciationEl);

@@ -194,3 +194,21 @@
     justify-content: center;
     align-items: center;
 }
+
+
+// Stilar för knappar (mindre skärmstorlek)
+@media screen and (max-width: 760px) { 
+    .base-button {
+        font-size: 1.125rem;
+        width: 9rem;
+        height: 3rem;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
