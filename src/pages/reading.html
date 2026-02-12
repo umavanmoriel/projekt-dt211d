@@ -43,8 +43,24 @@
                 </div>
             </div>
         </header>
-        <main class="main-reading">
-
+        <main class="main-block-presentation">
+            <section class="presentation-heading-container">
+                <h1>Lär dig engelska genom läsning</h1>
+                <p> Utveckla ditt språk genom autentiska texter. <br> Varje text ger dig 10 nya ord
+                    med översättning och uttal
+                </p>
+            </section>
+            <picture class="presentation-image">
+                <source media="(min-width: 600px)" srcset="../images/reading_300.avif" type="image/avif">
+                <source media="(min-width: 600px)" srcset="../images/reading_300.webp" type="image/webp">
+                <source media="(max-width: 600px)" srcset="../images/reading_150.avif" type="image/avif">
+                <source media="(max-width: 600px)" srcset="../images/reading_150.webp" type="image/webp">
+                <img class="presentation-image" src="../images/reading_427.jpg" alt="Bild som visar läsning av bok.">
+            </picture>
+            <div class="button-container">
+                <button id="reading-button" class="base-button">Börja läsa</button>
+                <button class="base-button" onclick="history.back()">Tillbaka</button>
+            </div>
         </main>
         <footer class="footer">
             <ul class="footer-list">
