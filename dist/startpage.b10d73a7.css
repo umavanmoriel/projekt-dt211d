@@ -186,7 +186,7 @@ input {
   display: inline-block;
 }
 
-.main-vocabulary {
+.main-block-presentation {
   flex-direction: column;
   justify-content: center;
   gap: 40px;
@@ -196,7 +196,7 @@ input {
   display: flex;
 }
 
-.main-vocabulary > .vocabulary-heading-container {
+.main-block-presentation > .presentation-heading-container {
   text-align: center;
   flex-direction: column;
   align-items: center;
@@ -205,12 +205,12 @@ input {
   display: flex;
 }
 
-.main-vocabulary > .vocabulary-image {
+.main-block-presentation > .presentation-image {
   margin: 0 auto;
   display: block;
 }
 
-.main-vocabulary > .vocabulary-image img {
+.main-block-presentation > .presentation-image img {
   border-radius: 12px;
   width: auto;
   height: auto;
@@ -369,15 +369,15 @@ input {
     height: 30px;
   }
 
-  .main-vocabulary > .vocabulary-heading-container {
+  .main-block-presentation > .presentation-heading-container {
     padding: 0;
   }
 
-  .main-vocabulary > .vocabulary-heading-container h1 {
+  .main-block-presentation > .presentation-heading-container h1 {
     font-size: 1.5rem;
   }
 
-  .main-vocabulary > .vocabulary-heading-container p {
+  .main-block-presentation > .presentation-heading-container p {
     font-size: 1.05rem;
   }
 
