@@ -65,5 +65,8 @@ function BookInfoDisplay(data) {
         booksSectionEl.appendChild(bookContentEl);
     });
 }
+document.getElementById('new-book-button').addEventListener('click', function() {
+    processBookData();
+});
 
 //# sourceMappingURL=books.e2cac60f.js.map

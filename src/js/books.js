@@ -85,3 +85,7 @@ function BookInfoDisplay(data) {
 
     });
 }
+
+document.getElementById('new-book-button').addEventListener('click', function() {
+    processBookData();
+});
