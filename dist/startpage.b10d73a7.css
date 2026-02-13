@@ -20,6 +20,16 @@ img {
 }
 
 body {
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+}
+
+main {
+  flex: 1;
+}
+
+body {
   color: #2d3748;
   background-color: #fff9ec;
   font-family: Georgia, Times New Roman, Times, serif;
@@ -808,5 +818,38 @@ th {
     gap: 20px;
     display: flex;
   }
+}
+
+.loading-state {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.loading-spinner {
+  border: 10px solid #d8e5fc;
+  border-top-color: #efe3fc;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+  animation: 1s linear infinite spin;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  color: #2d3748;
+  font-size: 1.125rem;
 }
 /*# sourceMappingURL=startpage.b10d73a7.css.map */

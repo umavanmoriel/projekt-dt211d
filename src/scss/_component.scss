@@ -212,3 +212,32 @@
     }
 
 }
+
+//Stilar för loading-spinner
+.loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.loading-spinner {
+    width: 120px;
+    height: 120px;
+    border: 10px solid $primary-color;
+    border-top: 10px solid $secondary-color;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+    color: $text-dark;
+    font-size: 1.125rem;
+}
