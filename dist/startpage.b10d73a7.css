@@ -423,6 +423,33 @@ th {
   background-color: #d8e5fc26;
 }
 
+.main-books {
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  padding: 80px 200px;
+  display: flex;
+}
+
+.main-books > .books-section {
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  display: flex;
+}
+
+.main-books > .books-section > .book-image {
+  object-fit: contain;
+  background: #fff;
+  border-radius: 16px;
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  max-height: 600px;
+  padding: 8px;
+  box-shadow: 0 8px 16px #0000001a, 0 4px 8px #d8e5fc33, 0 0 0 1px #d8e5fc1a;
+}
+
 @media screen and (width >= 530px) and (width <= 1000px) {
   .main-text {
     flex-direction: column;
@@ -446,6 +473,14 @@ th {
   .main-text > .text-table-container > .texts-container > h1 {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  .main-books {
+    padding: 80px 100px;
+  }
+
+  .main-books > .books-section {
+    text-align: center;
   }
 }
 
@@ -568,6 +603,14 @@ th {
   .main-text > .text-table-container > .text-words-list th {
     padding: 14px 10px;
     font-size: .9rem;
+  }
+
+  .main-books {
+    padding: 80px 50px;
+  }
+
+  .main-books > .books-section {
+    text-align: center;
   }
 }
 
