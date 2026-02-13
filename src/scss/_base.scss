@@ -15,7 +15,7 @@ $heading-line-height: 1.2;
 $heading-letter-spacing: -0.02em;
 
 $paragraph-font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
-$paragraph-font-size: 1.25rem;
+$paragraph-font-size: 1.125rem;
 $paragraph-line-height: 1.7;
 $paragraph-line-weight: 400;
 
@@ -109,4 +109,30 @@ input {
     line-height: $heading-line-height;
     letter-spacing: $heading-letter-spacing;
     font-size: 1.125rem;
+}
+
+td {
+    font-family: $heading-font-family;
+    font-weight: $paragraph-line-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    font-size: 1rem;
+    color: $text-dark;
+    padding: 14px 20px;
+
+    &:last-child {
+        font-style: italic;
+        color: $text-light;
+    }
+}
+
+th {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    font-size: 1.125rem;
+    color: $text-dark;
+    padding: 16px 20px;
+    text-align: left;
 }

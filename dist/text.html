@@ -2,12 +2,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/startpage.b10d73a7.css">
-        <title>Lär dig engelska genom läsning</title>
+        <title>Läs texter på engelska</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
         <script src="/startpage.b828852a.js" type="module"></script>
-        <script src="/reading.3337008c.js" type="module"></script>
+        <script src="/vocabulary.a8149eba.js" type="module"></script>
+        <script src="/text.cdfff18e.js" type="module"></script>
     </head>
     <body>
         <header class="header">
@@ -41,23 +42,19 @@
                 </div>
             </div>
         </header>
-        <main class="main-block-presentation">
-            <section class="presentation-heading-container">
-                <h1>Lär dig engelska genom läsning</h1>
-                <p> Utveckla ditt språk genom autentiska texter. <br> Varje text ger dig 10 nya ord
-                    med översättning och uttal
-                </p>
-            </section>
-            <picture class="presentation-image">
-                <source media="(min-width: 600px)" srcset="/reading_300.99422746.avif" type="image/avif">
-                <source media="(min-width: 600px)" srcset="/reading_300.0d36516e.webp" type="image/webp">
-                <source media="(max-width: 600px)" srcset="/reading_150.67e3f963.avif" type="image/avif">
-                <source media="(max-width: 600px)" srcset="/reading_150.510aedcc.webp" type="image/webp">
-                <img class="presentation-image" src="/reading_427.bfdf7221.jpg" alt="Bild som visar läsning av bok.">
-            </picture>
+        <main class="main-text">
+            <div class="text-table-container">
+                <section id="texts-container" class="texts-container">
+                    <h1 id="text-title">Laddar text...</h1>
+                    <p id="text-content"></p>
+                </section>
+                <table id="text-words-list" class="text-words-list">
+
+                </table>
+            </div>
             <div class="button-container">
-                <button id="reading-button" class="base-button">Börja läsa</button>
                 <button class="base-button" onclick="history.back()">Tillbaka</button>
+                <button id="new-text-button" class="base-button">Nästa text</button>
             </div>
         </main>
         <footer class="footer">
@@ -68,5 +65,4 @@
             </ul>
         </footer>
     
-
 </body></html>

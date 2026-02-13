@@ -88,7 +88,7 @@ h5 {
 p {
   color: #718096;
   font-family: Playfair Display, Georgia, Times New Roman, Times, serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -106,6 +106,32 @@ input {
   font-family: Inter, Roboto, sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
+  line-height: 1.2;
+}
+
+td {
+  letter-spacing: -.02em;
+  color: #2d3748;
+  padding: 14px 20px;
+  font-family: Inter, Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+td:last-child {
+  color: #718096;
+  font-style: italic;
+}
+
+th {
+  letter-spacing: -.02em;
+  color: #2d3748;
+  text-align: left;
+  padding: 16px 20px;
+  font-family: Inter, Roboto, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -353,6 +379,76 @@ input {
   height: 40px;
 }
 
+.main-text {
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 100px;
+  display: flex;
+}
+
+.main-text > .text-table-container {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 60px;
+  display: grid;
+}
+
+.main-text > .text-table-container > .texts-container {
+  width: 100%;
+  max-width: none;
+}
+
+.main-text > .text-table-container > .texts-container > h1 {
+  margin-bottom: 20px;
+}
+
+.main-text > .text-table-container > .text-words-list {
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px #d8e5fc06, 0 2px 4px -1px #efe3fc26;
+}
+
+.main-text > .text-table-container > .text-words-list > thead {
+  background: #d8e5fc;
+}
+
+.main-text > .text-table-container > .text-words-list > tbody .word-list-row {
+  border-bottom: 1px solid #d8e5fc4d;
+}
+
+.main-text > .text-table-container > .text-words-list > tbody .word-list-row:hover {
+  background-color: #d8e5fc26;
+}
+
+@media screen and (width >= 530px) and (width <= 1000px) {
+  .main-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding: 90px 80px;
+    display: flex;
+  }
+
+  .main-text > .text-table-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .main-text > .text-table-container > .texts-container {
+    text-align: center;
+    width: 100%;
+    max-width: none;
+  }
+
+  .main-text > .text-table-container > .texts-container > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (width <= 530px) {
   .main-startpage > .main-container {
     padding: 40px;
@@ -434,6 +530,44 @@ input {
 
   .main-new-word > #words-container > .word-container > ul > li {
     font-size: 1.125rem;
+  }
+
+  .main-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding: 60px 40px;
+    display: flex;
+  }
+
+  .main-text > .text-table-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    display: grid;
+  }
+
+  .main-text > .text-table-container > .texts-container {
+    text-align: center;
+    width: 100%;
+    max-width: none;
+  }
+
+  .main-text > .text-table-container > .texts-container > h1 {
+    font-size: 2rem;
+  }
+
+  .main-text > .text-table-container > .texts-container > p {
+    font-size: 1rem;
+  }
+
+  .main-text > .text-table-container > .text-words-list td {
+    padding: 14px 10px;
+    font-size: .8rem;
+  }
+
+  .main-text > .text-table-container > .text-words-list th {
+    padding: 14px 10px;
+    font-size: .9rem;
   }
 }
 
