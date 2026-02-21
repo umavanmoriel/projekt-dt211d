@@ -714,12 +714,21 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"a4wNE":[function(require,module,exports,__globalThis) {
-// Kör funktionen när siddan laddas om
-window.onload = init;
-function init() {
+/**
+ * Initierar applikationen när sidan laddas
+ * Anropar processBookData för att hämta och visa bokdata
+ */ window.onload = init;
+/**
+ * Startar processen för att hämta bokdata
+ * Anropar processBookData funktionen
+ */ function init() {
     processBookData();
 }
-async function getBooksInfo() {
+/**
+ * @async
+ * @returns {Promise<Object>} - Data med böcker från API:et
+ * @throws {Error} - Om fetch-anropet misslyckas
+ */ async function getBooksInfo() {
     try {
         // Begränsa antalet böcker för snabbare laddning
         const response = await fetch('https://gutendex.com/books/?languages=en&mime_type=text%2Fplain&page=1&page_size=10');
@@ -730,7 +739,12 @@ async function getBooksInfo() {
         throw error;
     }
 }
-async function processBookData() {
+/**
+ * Bearbetar bokdatan och visar en slumpmässig bok
+ * Visar laddningsindikator medan data hämtas
+ * @async
+ * @returns {Promise<void>}
+ */ async function processBookData() {
     const booksSectionEl = document.getElementById('books-section');
     if (booksSectionEl) booksSectionEl.innerHTML = '<div class="loading-state"><div class="loading-spinner"></div><p class="loading-text">H\xe4mtar bokrekommendationer...</p></div>';
     try {
@@ -742,7 +756,12 @@ async function processBookData() {
         if (booksSectionEl) booksSectionEl.innerHTML = "<p>Kunde inte ladda b\xf6cker. F\xf6rs\xf6k igen senare.</p>";
     }
 }
-function BookInfoDisplay(data) {
+/**
+ * Visar information om en slumpmässig bok i DOM:en
+ * Skapar HTML element för titel, författare, bild och sammanfattning
+ * @param {Object} data - Data från API med böcker
+ * @returns {void}
+ */ function BookInfoDisplay(data) {
     const booksSectionEl = document.getElementById('books-section');
     // Hämta rätt array från API-svaret
     const booksArray = data.results; // data.results innehåller böckerna
@@ -781,7 +800,10 @@ function BookInfoDisplay(data) {
         booksSectionEl.appendChild(bookContentEl);
     });
 }
-document.getElementById('new-book-button').addEventListener('click', function() {
+/**
+ * Lägger till eventlyssnare för "Ny bok"-knappen
+ * När användaren klickar på knappen hämtas en ny slumpmässig bok
+ */ document.getElementById('new-book-button').addEventListener('click', function() {
     processBookData();
 });
 

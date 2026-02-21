@@ -714,12 +714,23 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"aI46N":[function(require,module,exports,__globalThis) {
-// Kör funktionen när siddan laddas om
-window.onload = init;
-function init() {
+/**
+ * Initierar applikationen när sidan laddas
+ * Anropar processWordsData för att hämta och visa ett slumpmässigt ord
+ */ window.onload = init;
+/**
+ * Startar processen för att hämta orddata
+ * Anropar processWordsData funktionen
+ */ function init() {
     processWordsData();
 }
-async function getWordsInfo() {
+/**
+ * Hämtar information om ett slumpmässigt ord från Dictionary API
+ * Väljer ett slumpmässigt ord från en fördefinierad lista
+ * @async
+ * @returns {Promise<Array>} - Array med orddata från API
+ * @throws {Error} - Om fetch-anropet misslyckas
+ */ async function getWordsInfo() {
     try {
         const randomWords = [
             'lighthouse',
@@ -745,7 +756,12 @@ async function getWordsInfo() {
         throw error;
     }
 }
-async function processWordsData() {
+/**
+ * Bearbetar orddata och visar information om slumpmässig ord
+ * Anropar WordsInfoDisplay för att visa data
+ * @async
+ * @returns {Promise<void>}
+ */ async function processWordsData() {
     try {
         const result = await getWordsInfo();
         console.log('Received data:', result);
@@ -754,7 +770,12 @@ async function processWordsData() {
         console.error('Error processing data:', error);
     }
 }
-function WordsInfoDisplay(data) {
+/**
+ * Visar information om ett ord i DOM
+ * Skapar HTML element för ord, uttal, bild, definitioner och ljuduppspelning
+ * @param {Array} data - Array med orddata från Dictionary API
+ * @returns {void}
+ */ function WordsInfoDisplay(data) {
     const wordsSectionEl = document.getElementById('words-container');
     // Rensa tidigare innehåll
     wordsSectionEl.innerHTML = '';
@@ -798,8 +819,10 @@ function WordsInfoDisplay(data) {
         wordsSectionEl.appendChild(newSectionEl);
         console.log(imageData);
         const wordPlayerEl = document.getElementById('word-player');
-        // Funktion för att hämta ordets ljud
-        function wordPlayer() {
+        /**
+     * Skapar ljudspelare för ordets uttal
+     * Hämtar MP3 fil från Dictionary API och skapar audio element
+     */ function wordPlayer() {
             // Rensa tidigare innehåll i spelare 
             wordPlayerEl.innerHTML = '';
             // Skapa variabel för att hämta live sändning för kanal med spesifikt id
@@ -816,8 +839,10 @@ function WordsInfoDisplay(data) {
         wordPlayer();
     });
 }
-// Knapp som laddar om sidan för att ladda ny ord
-document.getElementById('new-word-button').addEventListener('click', function() {
+/**
+ * Lägger till eventlyssnare för "Nytt ord"-knappen
+ * När användaren klickar på knappen hämtas ett nytt slumpmässigt ord
+ */ document.getElementById('new-word-button').addEventListener('click', function() {
     processWordsData();
 });
 
