@@ -729,7 +729,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
  * Väljer ett slumpmässigt ord från en fördefinierad lista
  * @async
  * @returns {Promise<Array>} - Array med orddata från API
- * @throws {Error} - Om fetch-anropet misslyckas
+ * @throws {Error} - Om fetch anropet misslyckas
  */ async function getWordsInfo() {
     try {
         const randomWords = [

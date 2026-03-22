@@ -496,7 +496,7 @@ th {
 
 @media screen and (width <= 530px) {
   .main-startpage > .main-container {
-    padding: 40px;
+    padding: 20px;
   }
 
   .main-startpage > .main-container > .startpage-block {
@@ -745,7 +745,7 @@ th {
     animation: .3s forwards slideIn;
     display: flex;
     position: absolute;
-    top: 150px;
+    top: 125px;
     right: 0;
   }
 

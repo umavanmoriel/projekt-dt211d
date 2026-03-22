@@ -714,12 +714,22 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"5vdog":[function(require,module,exports,__globalThis) {
-// Kör funktionen när siddan laddas om
-window.onload = init;
-function init() {
+/**
+ * Initierar applikationen när sidan laddas
+ * Anropar processTextData för att hämta och visa en slumpmässig text
+ */ window.onload = init;
+/**
+ * Startar processen för att hämta textdata
+ * Anropar processTextData funktionen
+ */ function init() {
     processTextData();
 }
-async function getTextInfo() {
+/**
+ * Hämtar textinformation från GitHub API
+ * @async
+ * @returns {Promise<Array>} - Array med textobjekt från API
+ * @throws {Error} - Om fetch anropet misslyckas
+ */ async function getTextInfo() {
     try {
         const response = await fetch('https://raw.githubusercontent.com/umavanmoriel/api_test/main/texts.json');
         const data = await response.json();
@@ -729,7 +739,12 @@ async function getTextInfo() {
         throw error;
     }
 }
-async function processTextData() {
+/**
+ * Bearbetar textdata och visar en slumpmässig text
+ * Anropar TextInfoDisplay för att visa datan
+ * @async
+ * @returns {Promise<void>}
+ */ async function processTextData() {
     try {
         const result = await getTextInfo();
         console.log('Received data:', result);
@@ -738,7 +753,12 @@ async function processTextData() {
         console.error('Error processing data:', error);
     }
 }
-function TextInfoDisplay(data) {
+/**
+ * Visar information om en slumpmässig text i DOM
+ * Skapar HTML element för texttitel, innehåll och tabell
+ * @param {Array} data - Array med textobjekt från API
+ * @returns {void}
+ */ function TextInfoDisplay(data) {
     const textSectionEl = document.getElementById('texts-container');
     // Välj en slumpmässig text från arrayen
     const randomText = data[Math.floor(Math.random() * data.length)];
@@ -796,7 +816,10 @@ function TextInfoDisplay(data) {
         tableEl.appendChild(tbodyEl);
     });
 }
-document.getElementById('new-text-button').addEventListener('click', function() {
+/**
+ * Lägger till eventlyssnare för "Ny text"-knappen
+ * När användaren klickar på knappen hämtas en ny slumpmässig text
+ */ document.getElementById('new-text-button').addEventListener('click', function() {
     processTextData();
 });
 

@@ -727,7 +727,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 /**
  * @async
  * @returns {Promise<Object>} - Data med böcker från API:et
- * @throws {Error} - Om fetch-anropet misslyckas
+ * @throws {Error} - Om fetch anropet misslyckas
  */ async function getBooksInfo() {
     try {
         // Begränsa antalet böcker för snabbare laddning
