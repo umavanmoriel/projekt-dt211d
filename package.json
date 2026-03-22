@@ -1,7 +1,7 @@
 {
   "name": "projekt-dt211d",
   "version": "1.0.0",
-  "source": "src/pages/startpage.html",
+  "source": "src/pages/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
