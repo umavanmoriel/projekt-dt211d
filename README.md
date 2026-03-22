@@ -9,3 +9,7 @@
 - Styling med SASS SCSS
 - Versionshantering med GitHub
 - Exerna källor: Apier
+
+## Inlämning
+- länk till webbplats [EasyEngelska](https://dt211dprojekt.netlify.app/)
+- länk till Rapport [Ladda ner rapporten här](./docs/rapport.pdf)
