@@ -172,7 +172,7 @@ th {
 
 .main-startpage > .main-container > .startpage-block {
   background: #fff;
-  border: 1px solid #000;
+  border: 1px solid #d8e5fc;
   border-radius: 20px;
   flex-direction: column;
   gap: 40px;
@@ -195,7 +195,7 @@ th {
 
 .main-startpage > .main-container > .startpage-block li:before {
   content: "✓";
-  color: #000;
+  color: #d8e5fc;
   position: absolute;
   left: 0;
 }
@@ -287,7 +287,7 @@ th {
 .main-kontakta-oss > .contact-section > .contact-form > input, .main-kontakta-oss > .contact-section > .contact-form > textarea {
   box-sizing: border-box;
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1px solid #d8e5fc;
   border-radius: 10px;
   width: 100%;
   padding: 10px 14px;
@@ -321,7 +321,7 @@ th {
 
 .main-new-word > #words-container > .word-container {
   background: #fff;
-  border: 1px solid #000;
+  border: 1px solid #d8e5fc;
   border-radius: 20px;
   flex-direction: column;
   align-items: center;
@@ -365,14 +365,14 @@ th {
 
 .main-new-word > #words-container > .word-container > ul > li:before {
   content: "•";
-  color: #000;
+  color: #d8e5fc;
   margin-right: 8px;
   font-weight: bold;
 }
 
 .main-new-word > #word-player {
   background: #fff;
-  border: 1px solid #000;
+  border: 1px solid #d8e5fc;
   border-radius: 16px;
   justify-content: center;
   align-items: center;
@@ -422,7 +422,7 @@ th {
 }
 
 .main-text > .text-table-container > .text-words-list > thead {
-  background: #000;
+  background: #d8e5fc;
 }
 
 .main-text > .text-table-container > .text-words-list > tbody .word-list-row {
@@ -627,7 +627,7 @@ th {
 .header {
   z-index: 1000;
   backdrop-filter: blur(10px);
-  background: #000;
+  background: #d8e5fc;
   justify-content: space-between;
   align-items: center;
   height: 150px;
@@ -677,7 +677,7 @@ th {
 
 .footer {
   color: #2d3748;
-  background: #000;
+  background: #d8e5fc;
   padding: 50px;
   box-shadow: 0 -4px 12px #00000026, 0 -8px 24px #0000001a;
 }
@@ -750,7 +750,7 @@ th {
   }
 
   .header > .menu-container > .dropdown-menu.show > .menu-list {
-    background-color: #000;
+    background-color: #d8e5fc;
     flex-direction: column;
     gap: 10px;
     padding: 30px 40px;
@@ -770,8 +770,8 @@ th {
 .base-button {
   color: #2d3748;
   cursor: pointer;
-  background: #000;
-  border: 2px solid #000;
+  background: #d8e5fc;
+  border: 2px solid #d8e5fc;
   border-radius: 10px;
   width: 10rem;
   height: 3rem;
@@ -829,7 +829,7 @@ th {
 }
 
 .loading-spinner {
-  border: 10px solid #000;
+  border: 10px solid #d8e5fc;
   border-top-color: #efe3fc;
   border-radius: 50%;
   width: 120px;
@@ -852,4 +852,4 @@ th {
   color: #2d3748;
   font-size: 1.125rem;
 }
-/*# sourceMappingURL=pages.b10d73a7.css.map */
+/*# sourceMappingURL=startpage.b10d73a7.css.map */
